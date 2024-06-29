@@ -1,19 +1,17 @@
 {
 	"manifest_version": 3,
-	"name": "pausepal",
-	"version": "1.0.0",
-	"background": {
-		"servis_worker": "service-worker.js",
-		"type": "module"
-	},
+	"name": "Pause Pal",
+	"version": "1.0",
+	"background": {},
 	"description": "A minimalist timer that reminds you to take a break.",
 	"icons": {
 		"48": "assets/icons/icon-48.png",
 		"128": "assets/icons/icon-128.png"
 	},
 	"action": {
+		"default_title": "Pause Pal",
 		"default_popup": "index.html"
 	},
-	"permissions": ["scripting"],
+	"permissions": ["scripting", "notifications", "alarms", "storage"],
 	"host_permissions": ["http://*/*", "https://*/*"]
 }
